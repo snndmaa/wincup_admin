@@ -55,7 +55,7 @@ const ProfileForm = () => {
         // You may need to set headers depending on your API requirements
       });
         console.log(data)
-        if (data.ok) window.location.href = '/admin/profiles'
+        if (data.ok) window.location.href = '/admin'
         return
     }
     // Send form data to API endpoint using fetch or your preferred HTTP client library
@@ -69,7 +69,7 @@ const ProfileForm = () => {
       if (response.ok) {
         // Handle success (e.g., show success message)
         console.log('Form submitted successfully!');
-        window.location.href = '/admin/profiles'
+        window.location.href = '/admin'
       } else {
         // Handle error (e.g., show error message)
         console.error('Failed to submit form:', response.statusText);

@@ -46,7 +46,7 @@ function App() {
               {
                 isAuthenticated ? (
                   <Routes>
-                    <Route exact path="/admin" element={<Dashboard />} />
+                    <Route exact path="/" element={<Dashboard />} />
                     <Route exact path="/admin/users" element={<User />} />
                     <Route exact path="/admin/contacts" element={<Contacts />} />
                     <Route exact path="/admin/profiles" element={<Profile />} />

@@ -50,13 +50,13 @@ const UserForm = () => {
     if (userId) {
       const response = await new Fetcher()
       .updateUser(userId, values, token)
-      if (response.status === 'success') window.location.href = '/admin/users'
+      if (response.status === 'success') window.location.href = '/admin'
       else toast.error('Failed to create user!')
     } else {
       const response = await new Fetcher()
       .createUser(values, token)
   
-      if (response.status === 'success') window.location.href = '/admin/users'
+      if (response.status === 'success') window.location.href = '/admin'
       else toast.error('Failed to create user!')
     }
   };
